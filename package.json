@@ -1,6 +1,6 @@
 {
   "name": "@pyris/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, extensible logging library for TypeScript with support for multiple transports and structured logging.",
   "type": "module",
   "main": "./dist/index.cjs",
