@@ -1,0 +1,57 @@
+{
+  "name": "@pyris/logger",
+  "version": "1.0.0",
+  "description": "A lightweight, extensible logging library for TypeScript with support for multiple transports and structured logging.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "logger",
+    "logging",
+    "structured-logging",
+    "typescript",
+    "transport",
+    "console",
+    "file"
+  ],
+  "author": "pyris",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyris-dev/logger.git"
+  },
+  "homepage": "https://github.com/pyris-dev/logger#readme",
+  "bugs": {
+    "url": "https://github.com/pyris-dev/logger/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
